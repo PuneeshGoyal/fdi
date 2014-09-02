@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FDI.iml" filepath="$PROJECT_DIR$/FDI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/New folder.iml" filepath="$PROJECT_DIR$/New folder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fdi-app.iml" filepath="$PROJECT_DIR$/fdi-app.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,371 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:longClickable="true"
+        android:orientation="vertical"
+        android:padding="40dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/textView"
+                android:gravity="left"
+                android:text="@string/tagline_activity_register"
+                android:textColor="#1c9ad5"
+                android:textSize="45sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fullscreen_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/notes_activity_register"
+                android:textColor="#185f9c"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/iv_mandatory"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/required" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_name"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/reg_name" />
+
+            <EditText
+                android:id="@+id/edtNme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/iv_name"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/name_register"
+                android:imeActionLabel="Nm"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/iv_mandatoryname"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/required" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/reg_email" />
+
+            <EditText
+                android:id="@+id/edteml"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/iv_email"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/email_register"
+                android:imeActionLabel="Nm"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/iv_mandatoryemail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/required" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_occ"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/reg_occ" />
+
+            <Spinner
+                android:id="@+id/occupation_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iv_occ"
+                android:background="@drawable/drop_down"
+                android:entries="@array/occupation_select"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:prompt="@string/occupation"
+                android:spinnerMode="dropdown"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/edtocc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/occupation_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_occ"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/other_occ"
+                android:imeActionLabel="Nm"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="22sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtOccu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            android:textColor="#FF0000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_dental"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/reg_dent_pract" />
+
+            <Spinner
+                android:id="@+id/dentalwork_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iv_dental"
+                android:background="@drawable/drop_down"
+                android:entries="@array/dentalwork_select"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:prompt="@string/dentalpractice"
+                android:spinnerMode="dropdown"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtDental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF0000"
+            android:layout_gravity="right"
+            android:visibility="gone" />
+
+        
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_loc"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/reg_loc" />
+
+            <Spinner
+                android:id="@+id/wherefrom_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iv_loc"
+                android:background="@drawable/drop_down"
+                 android:entries="@array/wherefrom_select"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:prompt="@string/country_residence"
+                android:spinnerMode="dropdown"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/edtwhere"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/wherefrom_spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_loc"
+                android:background="@drawable/et_bg"
+                android:ems="10"
+                android:hint="@string/other_loc"
+                android:imeActionLabel="Nm"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="22sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            android:textColor="#FF0000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_webdent"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/reg_webdent" />
+
+            <Spinner
+                android:id="@+id/webdentist_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iv_webdent"
+                android:background="@drawable/drop_down"
+                android:entries="@array/webdentist_select"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:prompt="@string/Webdentist"
+                android:spinnerMode="dropdown"
+                android:textSize="22sp" />
+        </RelativeLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/txtWebDentist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF0000"
+            android:layout_gravity="right"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:textColor="#185f9c"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:text="@string/receive_personalised_activity_register" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:textSize="14sp"
+            android:textColor="#185f9c"
+            android:textStyle="italic"
+            android:text="@string/receive_any_activity_register" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="buttonOnClick"
+            android:background="@null"
+            android:drawableLeft="@drawable/next_arrow"
+            android:textColor="#1c9ad5"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="48sp"
+            android:text="Next" />
+    </LinearLayout>
+
+</ScrollView>

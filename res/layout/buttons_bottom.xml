@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blankLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.txm.fdi.BlankActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_left"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.7"
+            android:layout_gravity="bottom"
+            android:src="@drawable/edit_profile" />
+
+        <ImageView
+            android:id="@+id/btn_center"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/scan" />
+
+        <ImageView
+            android:id="@+id/btn_right"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.7"
+            android:src="@drawable/tag_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

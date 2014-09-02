@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.txm.fdi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
+
+    <uses-feature android:name="andriod.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.txm.fdi.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.txm.fdi.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.txm.fdi.Instruction1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.Instruction2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.txm.fdi.CameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.TestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.TheaterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.BlankActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.TagActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.QuizActivity"
+           
+            android:launchMode="singleTask"
+         
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.QuizSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.txm.fdi.QuizAnswerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="net.txm.fdi.Empty_Ativity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
